@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { scroll-padding-top: 5rem; }
+body { @apply bg-white text-lions-navy font-sans antialiased; }
+h1, h2, h3 { @apply font-serif text-lions-navy; }
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 3px solid #F5B800; outline-offset: 3px; border-radius: 2px;
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* Runway centreline: the one decorative motif, used under the home hero */
+.runway { height: 6px; background: repeating-linear-gradient(90deg, #F5B800 0 36px, transparent 36px 64px); }
